@@ -4,7 +4,7 @@ namespace Saeedvir\Supabase\Examples;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Saeedvir\Supabase\Facades\Supabase;
+use Supavel\Supabase\Facades\Supabase;
 
 class SupabaseExampleController extends Controller
 {

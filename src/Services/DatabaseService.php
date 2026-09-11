@@ -1,6 +1,6 @@
 <?php
 
-namespace Saeedvir\Supabase\Services;
+namespace Supavel\Supabase\Services;
 
 use Illuminate\Support\Arr;
 

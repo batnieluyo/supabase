@@ -16,7 +16,7 @@ This guide explains how to install and set up the Supabase Laravel Package.
 Install the package via Composer:
 
 ```bash
-composer require saeedvir/supabase
+composer require batnieluyo/supabase
 ```
 
 ### 2. Publish Configuration
@@ -24,7 +24,7 @@ composer require saeedvir/supabase
 Publish the configuration file to customize the package settings:
 
 ```bash
-php artisan vendor:publish --provider="Saeedvir\Supabase\SupabaseServiceProvider" --tag="supabase-config"
+php artisan vendor:publish --provider="Supavel\Supabase\SupabaseServiceProvider" --tag="supabase-config"
 ```
 
 This will create a `config/supabase.php` file in your application.
@@ -75,7 +75,7 @@ If you're using Laravel < 11, you may need to manually register the service prov
 ```php
 'providers' => [
     // Other service providers...
-    Saeedvir\Supabase\SupabaseServiceProvider::class,
+    Supavel\Supabase\SupabaseServiceProvider::class,
 ];
 ```
 
@@ -86,7 +86,7 @@ If you want to use the facade and are using Laravel < 11, add it to the aliases 
 ```php
 'aliases' => [
     // Other aliases...
-    'Supabase' => Saeedvir\Supabase\Facades\Supabase::class,
+    'Supabase' => Supavel\Supabase\Facades\Supabase::class,
 ];
 ```
 
@@ -96,7 +96,7 @@ After installation, you can test the package by creating a simple route:
 
 ```php
 // routes/web.php
-use Saeedvir\Supabase\Facades\Supabase;
+use Supavel\Supabase\Facades\Supabase;
 
 Route::get('/supabase-test', function () {
     $info = Supabase::info();

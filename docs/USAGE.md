@@ -17,7 +17,7 @@ This guide explains how to use the Supabase Laravel Package to integrate Supabas
 Install the package via Composer:
 
 ```bash
-composer require saeedvir/supabase
+composer require batnieluyo/supabase
 ```
 
 ## Configuration
@@ -25,7 +25,7 @@ composer require saeedvir/supabase
 Publish the configuration file:
 
 ```bash
-php artisan vendor:publish --provider="Saeedvir\Supabase\SupabaseServiceProvider" --tag="supabase-config"
+php artisan vendor:publish --provider="Supavel\Supabase\SupabaseServiceProvider" --tag="supabase-config"
 ```
 
 Add your Supabase credentials to your `.env` file:

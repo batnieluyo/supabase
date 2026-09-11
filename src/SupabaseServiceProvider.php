@@ -1,6 +1,6 @@
 <?php
 
-namespace Saeedvir\Supabase;
+namespace Supavel\Supabase;
 
 use Illuminate\Support\ServiceProvider;
 use Saeedvir\Supabase\Services\SupabaseService;

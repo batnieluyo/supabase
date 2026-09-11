@@ -64,7 +64,7 @@ supabase/
 ## Installation
 
 ```bash
-composer require saeedvir/supabase
+composer require batnieluyo/supabase
 ```
 
 ## Configuration
@@ -80,7 +80,7 @@ SUPABASE_SECRET=your-supabase-secret-key
 
 ### Using the Facade
 ```php
-use Saeedvir\Supabase\Facades\Supabase;
+use Supavel\Supabase\Facades\Supabase;
 
 // Database operations
 $users = Supabase::db()->select('users');
@@ -94,7 +94,7 @@ $result = Supabase::storage()->upload('avatars', 'user.png', '/path/to/file.png'
 
 ### Using the Service Directly
 ```php
-use Saeedvir\Supabase\Services\SupabaseService;
+use Supavel\Supabase\Services\SupabaseService;
 
 $supabase = new SupabaseService();
 $users = $supabase->db->select('users');

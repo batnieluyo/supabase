@@ -1,5 +1,5 @@
 {
-    "name": "saeedvir/supabase",
+    "name": "batnieluyo/supabase",
     "description": "A Laravel package for integrating with Supabase services",
     "type": "library",
     "license": "MIT",
@@ -7,6 +7,9 @@
         {
             "name": "saeedvir",
             "email": "saeedvirani@example.com"
+        },
+        {
+            "name": "batnieluyo"
         }
     ],
     "require": {
@@ -16,16 +19,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Saeedvir\\Supabase\\": "src/"
+            "Supavel\\Supabase\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Saeedvir\\Supabase\\SupabaseServiceProvider"
+                "Supavel\\Supabase\\SupabaseServiceProvider"
             ],
             "aliases": {
-                "Supabase": "Saeedvir\\Supabase\\Facades\\Supabase"
+                "Supabase": "Supavel\\Supabase\\Facades\\Supabase"
             }
         }
     },

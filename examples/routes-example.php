@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Saeedvir\Supabase\Examples\SupabaseExampleController;
+use Supavel\Supabase\Examples\SupabaseExampleController;
 
 /*
 |--------------------------------------------------------------------------

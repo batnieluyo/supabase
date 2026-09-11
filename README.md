@@ -1,8 +1,10 @@
 # Supabase Laravel Package
 
-![alt text](https://raw.githubusercontent.com/saeedvir/supabase/refs/heads/main/docs/laravel-supabase-img.jpg?raw=true)
+![alt text](https://raw.githubusercontent.com/batnieluyo/supabase/refs/heads/main/docs/laravel-supabase-img.jpg?raw=true)
 
 A comprehensive Laravel package for integrating with Supabase services including Auth, Database, Storage, and Realtime.
+
+Based on
 
 - [Chat with AI for "saeedvir/supabase" package](https://context7.com/saeedvir/supabase?tab=chat)
 - [حمایت مالی از من](https://reymit.ir/saeedvir)
@@ -12,7 +14,7 @@ A comprehensive Laravel package for integrating with Supabase services including
 You can install the package via composer:
 
 ```bash
-composer require saeedvir/supabase
+composer require batnieluyo/supabase
 ```
 
 ## Configuration
@@ -20,7 +22,7 @@ composer require saeedvir/supabase
 Publish the configuration file:
 
 ```bash
-php artisan vendor:publish --provider="Saeedvir\Supabase\SupabaseServiceProvider" --tag="supabase-config"
+php artisan vendor:publish --provider="Supavel\Supabase\SupabaseServiceProvider" --tag="supabase-config"
 ```
 
 Add your Supabase credentials to your `.env` file:
@@ -46,7 +48,7 @@ SUPABASE_SECRET=your-supabase-secret-key
 ### Using the Facade
 
 ```php
-use Saeedvir\Supabase\Facades\Supabase;
+use Supavel\Supabase\Facades\Supabase;
 
 // Database operations
 $users = Supabase::db()->select('users', '*', ['active' => true]);
@@ -64,7 +66,7 @@ $url = Supabase::realtime()->channelUrl('public', 'users');
 ### Using the Service Directly
 
 ```php
-use Saeedvir\Supabase\Services\SupabaseService;
+use Supavel\Supabase\Services\SupabaseService;
 
 $supabase = new SupabaseService();
 
@@ -113,7 +115,7 @@ You can customize the package behavior by modifying the `config/supabase.php` fi
 
 ## Requirements
 
-- PHP ^8.0
+- PHP ^8.3
 - Laravel ^11.0|^12.0|^13.0
 - GuzzleHTTP ^7.0
 

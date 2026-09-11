@@ -5,14 +5,14 @@ Get up and running with the Supabase Laravel Package in minutes.
 ## Installation
 
 ```bash
-composer require saeedvir/supabase
+composer require batnieluyo/supabase
 ```
 
 ## Configuration
 
 1. Publish the config file:
 ```bash
-php artisan vendor:publish --provider="Saeedvir\Supabase\SupabaseServiceProvider" --tag="supabase-config"
+php artisan vendor:publish --provider="Supavel\Supabase\SupabaseServiceProvider" --tag="supabase-config"
 ```
 
 2. Add your Supabase credentials to `.env`:
@@ -24,7 +24,7 @@ SUPABASE_KEY=your-supabase-public-key
 ## Basic Usage
 
 ```php
-use Saeedvir\Supabase\Facades\Supabase;
+use Supavel\Supabase\Facades\Supabase;
 
 // Get all users
 $users = Supabase::db()->select('users');

@@ -1,9 +1,9 @@
 <?php
 
-namespace Saeedvir\Supabase\Tests;
+namespace Supavel\Supabase\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Saeedvir\Supabase\Services\SupabaseClient;
+use Supavel\Supabase\Services\SupabaseClient;
 
 class SupabaseClientTest extends TestCase
 {

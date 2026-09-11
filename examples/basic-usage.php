@@ -8,7 +8,7 @@
  */
 
 // 1. Using the Facade (recommended approach)
-use Saeedvir\Supabase\Facades\Supabase;
+use Supavel\Supabase\Facades\Supabase;
 
 // Get information about the Supabase connection
 $info = Supabase::info();
@@ -43,7 +43,7 @@ $channelUrl = Supabase::realtime()->channelUrl('public', 'users');
 echo $channelUrl;
 
 // 2. Using the Service directly
-use Saeedvir\Supabase\Services\SupabaseService;
+use Supavel\Supabase\Services\SupabaseService;
 
 $supabase = new SupabaseService();
 
