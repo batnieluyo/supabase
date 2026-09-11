@@ -103,7 +103,7 @@ $users = $supabase->db->select('users');
 ## Requirements
 
 - PHP ^8.0
-- Laravel ^11.0|^12.0
+- Laravel ^11.0|^12.0|^13.0
 - GuzzleHTTP ^7.0
 
 ## License
